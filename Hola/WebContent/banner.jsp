@@ -1,3 +1,4 @@
+<%@page import="lti.hola.bean.RegisterBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -8,7 +9,12 @@
 </head>
 <body>
 <h1 align = "center" > Hola- Community of Experts</h1>
+<% RegisterBean user= (RegisterBean) session.getAttribute("User"); 
+if(user!=null){ %>
+<h4> Hello <%= user.getName() %> | <a href= "UserController.hola?Logout=yes">Logout</a></h4>
+<% } else { %>
 <h4>Hello Visitor</h4>
+<% } %>
 <hr size="3" color="midnightblue">
 </body>
 </html>

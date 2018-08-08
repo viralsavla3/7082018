@@ -60,7 +60,7 @@ public class UserRepositoryImpl implements UserRepository {
 				user.setGender(rs.getString(5));
 				user.setCity(rs.getString(6));
 				user.setMovie(rs.getString(7));
-				user.setPassword(rs.getString(8));
+				user.setPhoto(rs.getString(8));
 
 			}
 			return user;

@@ -33,6 +33,9 @@ input[type=text] {
 <body bgcolor=black text=red>
 <jsp:include page="banner.jsp"/>
 
+<% if(request.getParameter("invalid")!=null){ %>
+<font size="3" color="Red">Invalid Email ID / Password</font>
+<%} %>
 <form action="UserController.hola" method="get">
 		<marquee>
 			<h1>LOGIN PAGE</h1>

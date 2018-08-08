@@ -1,5 +1,9 @@
 package lti.hola.webb;
-
+/**
+ * Used to register entries into database
+ * @author Viral Savla,Dhrumil Shah
+ * verion 1.0
+ */
 
 import javax.servlet.http.HttpServletRequest;
 

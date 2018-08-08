@@ -22,12 +22,13 @@ password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 </script>
 </head>
-<body>
+<h1> Change Password</h1>
+<body bgcolor=black text=red>
 
 <form action="UserController.hola" method="get">
-Email id: <input type="text" id="email"	name="email" required>
-New Password:<input type="password" id="password" placeholder="Password" name="password" required>
-Re-enter New Password:<input type="password" placeholder="Confirm Password" id="confirm_password" name="password" required>
+Email id: <input type="text" id="email"	name="email" required><br>
+New Password:<input type="password" id="password" placeholder="Password" name="password" required><br>
+Re-enter New Password:<input type="password" placeholder="Confirm Password" id="confirm_password" name="password" required><br>
 <input type="submit" id="submit" name="submit" value="Confirm" onclick="validatePassword()">
 </form>
 <br><br>

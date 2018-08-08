@@ -29,14 +29,16 @@ input[type=text] {
 <title>Insert title here</title>
 </head>
 <body bgcolor=black text=red>
+<% if(request.getParameter("invalid")!=null){ %>
+<font size="3" color="Red">Invalid Email ID / Movie</font>
+<%} %>
 
-
-	<form action="UserController.hola">
+	<form action="UserController.hola" method="get">
 		<marquee>
 			<h1>ForgetPage</h1>
 		</marquee>
 		<label for="email">Email id: <input type="email" id="email"
-			name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+			name="email"
 			required> <br>
 		<br> As Security Question:<br>
 		<br> <label for="movie">Your Favourite Movie Name is: <input

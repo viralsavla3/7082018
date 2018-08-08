@@ -49,6 +49,8 @@ public class UserServiceImpl implements UserService {
 	public boolean persist(RegisterBean register) {
 		Encoder encoder = Base64.getEncoder();
 		String encoded = encoder.encodeToString(register.getPassword().getBytes());
+		register.setMovie(encoder.encodeToString(register.getPassword().getBytes()));
+
 		register.setPassword(encoded);
 		
 //		Decoder decoder = Base64.getDecoder();

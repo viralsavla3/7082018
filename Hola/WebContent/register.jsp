@@ -35,7 +35,6 @@ input[type=text] {
 </head>
 <body bgcolor=black text=red>
 
-<jsp:include page="banner.jsp"/>
 
 	<form action="UserController.hola" method="get">
 	
@@ -60,7 +59,7 @@ input[type=text] {
 							</select>					
 							<br> 
 <label for="movie">Favorite Movie: <input type="password" name="movie" required> <br>
-<label for="photo">Profile Photo: <input type="file" 	id="photo" name="photo" accept="image/png, image/jpg" required>
+<label for="photo">Profile Photo: <input type="file" 	id="photo" name="photo" required>
 <br> <br> <input type="submit" id="submit"	name="submit" value="Submit">
  <input	type="submit" class="floatright" value="Cancel" /><br class="clear" /></form>
 <%@ include file="footer.html" %>
